@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мир котиков</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Модальное окно -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <h3>Напоминание</h3>
+    <p>Не забудьте погладить своего кота сегодня!</p>
+    <button id="closeModal">Закрыть</button>
+  </div>
+</div>
+
+<h1 class="gradient-text">Добро пожаловать в мир котиков!</h1>
+
+<!-- Слайдер -->
+<div class="slider">
+  <img id="slide" src="1.jpg">
+  <br>
+  <button id="prev">Назад</button>
+  <button id="next">Вперед</button>
+</div>
+
+<!-- Видео -->
+<div class="video-block">
+    <video id="video" width="300">
+        <source src="cat.mp4" type="video/mp4">
+    </video>
+  <br>
+  <button id="playBtn">▶ Пуск</button>
+</div>
+
+<!-- Форма -->
+<h2>Поделитесь фото своего кота</h2>
+<form id="form">
+  <input type="email" placeholder="Email" required>
+  <div id="fields"></div>
+  <button type="button" id="addField">Добавить поле</button>
+  <button type="submit">Отправить</button>
+  <p id="msg"></p>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
